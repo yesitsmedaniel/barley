@@ -37,8 +37,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] minmax(.4rem, 5rem) [mainstart] 1fr [mainend] minmax(4px, 5rem) [full-end];
-  grid-template-rows: [topStart] minmax(.8rem, 6rem) [topEnd announceStart] 5rem [announceEnd heroStart] 1fr [heroEnd footerStart] minmax(5rem, 15rem) [footerEnd];
+  grid-template-columns: [full-start] minmax(.4rem, 3rem) [mainstart] 1fr [mainend] minmax(4px, 3rem) [full-end];
+  grid-template-rows: [topStart] minmax(.8rem, 6rem) [topEnd announceStart] 5rem [announceEnd heroStart] 1fr [heroEnd footerStart] minmax(5rem, 10rem) [footerEnd];
   grid-template-areas:
     ". navbar ."
     "announceBar announceBar announceBar"
@@ -89,10 +89,11 @@ body {
 .logoSmall {
   display: flex;
   justify-content: center;
-  height: auto;
+  height:auto;
 
 }
 .logoSmall img{
+  height: auto;
   min-width: 17.5rem;
   width: 75%;
   max-width: 25rem;
