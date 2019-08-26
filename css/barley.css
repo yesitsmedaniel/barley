@@ -44,7 +44,7 @@ body {
     "announceBar announceBar announceBar"
     ". hero ."
     "footer footer footer";
-  /* min-height: 100%; */
+  min-height: 100%;
   width: 100%;
 }
 /* everything below is within the container */
@@ -92,6 +92,7 @@ body {
 
 }
 .logoSmall img{
+  height: auto;
   min-width: 17.5rem;
   width: 75%;
   max-width: 25rem;
