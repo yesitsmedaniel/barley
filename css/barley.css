@@ -31,19 +31,21 @@ body {
   letter-spacing: 0.2em;
   height: 100%;
   width: 100%;
+  margin: 0;
 
 }
 
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(.4rem, 5rem) [mainstart] 1fr [mainend] minmax(4px, 5rem) [full-end];
-  grid-template-rows: [topStart] 6rem [topEnd announceStart] 5rem [announceEnd heroStart] 1fr [heroEnd footerStart] 15rem [footerEnd];
+  grid-template-rows: [topStart] minmax(.8rem, 6rem) [topEnd announceStart] 5rem [announceEnd heroStart] 1fr [heroEnd footerStart] minmax(5rem, 15rem) [footerEnd];
   grid-template-areas:
     ". navbar ."
     "announceBar announceBar announceBar"
     ". hero ."
     "footer footer footer";
   min-height: 100%;
+  width: 100%;
 }
 /* everything below is within the container */
 
@@ -91,8 +93,8 @@ body {
 }
 .logoSmall img{
   min-width: 17.5rem;
-  width: 75%;
-  max-width: 30rem;
+  /* width: 75%; */
+  max-width: 25rem;
   border-bottom: 2px solid var(--cream);
 }
 @media (max-width: 44rem) {
