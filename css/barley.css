@@ -78,7 +78,8 @@ body {
   grid-area: hero;
   justify-self: center;
   align-self: center;
-  margin-top: 5rem;
+  padding: 2rem;
+  /* margin-top: 5rem; */
 }
 
 .logoBig img{
@@ -88,12 +89,13 @@ body {
 }
 .logoSmall {
   display: flex;
+  align-items: center;
   justify-content: center;
   height:auto;
 
 }
 .logoSmall img{
-  height: auto;
+  align-self: center;
   min-width: 17.5rem;
   width: 75%;
   max-width: 25rem;
