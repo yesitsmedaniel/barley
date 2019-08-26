@@ -78,7 +78,7 @@ body {
   grid-area: hero;
   justify-self: center;
   align-self: center;
-  margin: 5rem;
+  margin-top: 5rem;
 }
 
 .logoBig img{
@@ -93,7 +93,7 @@ body {
 }
 .logoSmall img{
   min-width: 17.5rem;
-  /* width: 75%; */
+  width: 75%;
   max-width: 25rem;
   border-bottom: 2px solid var(--cream);
 }
