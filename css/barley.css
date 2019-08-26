@@ -89,10 +89,10 @@ body {
 .logoSmall {
   display: flex;
   justify-content: center;
+  height: auto;
 
 }
 .logoSmall img{
-  height: auto;
   min-width: 17.5rem;
   width: 75%;
   max-width: 25rem;
