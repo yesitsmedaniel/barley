@@ -38,7 +38,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(.4rem, 3rem) [mainstart] 1fr [mainend] minmax(4px, 3rem) [full-end];
-  grid-template-rows: [topStart] minmax(.8rem, 6rem) [topEnd announceStart] 5rem [announceEnd heroStart] 1fr [heroEnd footerStart] minmax(5rem, 10rem) [footerEnd];
+  grid-template-rows: [topStart] minmax(.8rem, 6rem) [topEnd announceStart] 5rem [announceEnd heroStart] 1fr [heroEnd footerStart] minmax(5rem, 11rem) [footerEnd];
   grid-template-areas:
     ". navbar ."
     "announceBar announceBar announceBar"
@@ -55,11 +55,11 @@ body {
   text-align: center;
 }
 .address p {
+  line-height: normal;
   margin-bottom: .5rem;
 }
 .announceBar {
   grid-area: announceBar;
-  /* display: grid; */
   align-self: center;
  background-color: rgba(235, 230, 221, 0.5);
 }
@@ -78,7 +78,7 @@ body {
   grid-area: hero;
   justify-self: center;
   align-self: center;
-  padding: 2rem;
+  padding: 2.5rem;
   /* margin-top: 5rem; */
 }
 
@@ -96,18 +96,18 @@ body {
 }
 .logoSmall img{
   align-self: center;
-  min-width: 17.5rem;
+  min-width: 13.5rem;
   width: 75%;
   max-width: 25rem;
   border-bottom: 2px solid var(--cream);
 }
 @media (max-width: 44rem) {
   .announceBar p{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
   .hero h3 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
   }
   .logoBig {
