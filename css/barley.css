@@ -69,6 +69,14 @@ body {
   text-transform: uppercase;
   margin: .6rem;
 }
+
+.contact {
+  margin-right: -2px;
+  padding: 5px 7px 5px 8px;
+  border-radius: 2px;
+  color: #333333;
+  background-color: var(--accentgreen);
+}
 .footer {
   grid-area: footer;
   justify-self: center;
@@ -106,6 +114,7 @@ body {
     font-size: 2.4rem;
   }
   .hero h3 {
+    margin-top: 5px;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 300;
