@@ -17,12 +17,17 @@ html {
 
 a {
   all: unset;
+
 }
 body {
-  background-image: linear-gradient(rgba(61, 50, 50, .7), rgba(61, 50, 50, .7)), url(../images/construction-barley-desat.jpg);
+  background-image: linear-gradient(
+      rgba(120, 100, 120, 0.3),
+      rgba(120, 100, 120, 0.3)
+    ),url(../images/barley_interior_bg.jpg);
   /* background-color: var(--chestnut); */
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: local;
   background-position: center;
   color: white;
   font-family: 'Barlow', sans-serif;
@@ -59,6 +64,7 @@ body {
   margin-bottom: .5rem;
 }
 .announceBar {
+  visibility: hidden;
   grid-area: announceBar;
   align-self: center;
  background-color: rgba(235, 230, 221, 0.5);
@@ -110,6 +116,8 @@ body {
   border-bottom: 2px solid var(--cream);
 }
 @media (max-width: 44rem) {
+  /* controls small / mobile view */
+
   .announceBar p{
     font-size: 2.4rem;
   }
@@ -123,7 +131,10 @@ body {
     display: none;
   }
 }
+
 @media (min-width: 44rem) {
+  /* controls large / desktop view */
+
   .announceBar p{
     font-size: 2.8rem;
   }
