@@ -94,7 +94,9 @@ p {
   text-transform: uppercase;
   margin: 2rem;
 }
-
+.hero h1 img {
+  object-fit: contain;
+}
 .hero h2 {
   color: white;
   font-weight: normal;
