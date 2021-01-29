@@ -1,4 +1,4 @@
-:root {
+\:root {
   --accentgreen: #55CEAB;
   --cream: #EBE6DD;
   --chestnut: #3D3232;
@@ -7,165 +7,274 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 10px;
   height: 100%;
   width: 100%;
     /* overflow-x: hidden; */
 }
+a { text-decoration: none; color: #333 } /* Globally */
 
-a {
-  all: unset;
+/* Each state */
 
-}
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; }
+a:hover, a:active { text-decoration: none; color:black }
 body {
-  background-image: linear-gradient(
-      rgba(120, 100, 120, 0.3),
-      rgba(120, 100, 120, 0.3)
-    ),url(../images/barley_interior_bg.jpg);
-  /* background-color: var(--chestnut); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-position: center;
-  color: white;
-  font-family: 'Barlow', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    background-color: var(--chestnut);
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    overflow-y: scroll;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: [full-start] minmax(.4rem, 3rem) [mainstart] 1fr [mainend] minmax(4px, 3rem) [full-end];
-  grid-template-rows: [topStart] minmax(.8rem, 6rem) [topEnd announceStart] 5rem [announceEnd heroStart] 1fr [heroEnd footerStart] minmax(5rem, 11rem) [footerEnd];
-  grid-template-areas:
-    ". navbar ."
-    "announceBar announceBar announceBar"
-    ". hero ."
-    "footer footer footer";
-  min-height: 100%;
-  width: 100%;
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-/* everything below is within the container */
-
-.address {
-
-  border-bottom: 2px solid var(--accentgreen);
-  text-align: center;
+h1 {
+  padding: 1.2rem;
+  margin-bottom: 5rem;
 }
-.address p {
-  line-height: normal;
-  margin-bottom: .5rem;
+
+h2 {
+font-size: 2.4rem;
+margin: 1.2rem;
+line-height: 125%;
+text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Meddon', cursive;
+  font-size: 1.8rem;
+  /* margin: 1.2rem; */
+}
+
+p {
+  font-size: 1.8rem;
+  /* padding: 1.6rem; */
+}
+/* div styling */
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 95vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+   text-align: center;
+
+    /*background stuff*/
+    background-image: linear-gradient(
+        rgba(48, 36, 63, 0.55),
+        rgba(48, 36, 63, 0.55)
+      ),url(../images/barley-fresh-pic.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .announceBar {
-  visibility: hidden;
-  grid-area: announceBar;
+  /* visibility: hidden; */
   align-self: center;
- background-color: rgba(235, 230, 221, 0.5);
+ /* background-color: rgba(235, 230, 221, 0.5); */
 }
 .announceBar p{
+  color: #fff;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  margin: .6rem;
+  margin: 2rem;
 }
 
-.contact {
-  margin-right: -2px;
-  padding: 5px 7px 5px 8px;
-  border-radius: 2px;
-  color: #333333;
-  background-color: var(--accentgreen);
+.hero h2 {
+  color: white;
+  font-weight: normal;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Border styles */
+    /* border: 3px solid black; */
+    /* Background styles */
+    font-size: 2.2rem;
+    font-weight: 700;
+    background-color: var(--accentgreen);
+    color: #000;
+}
+.hero .btn:hover{
+  color:#fff;
+}
+.hero .btn:active{
+  background-color: black;
+}
+
+.hero .btn2 {
+  /* Positioning and sizing */
+  display: block;
+  width: auto;
+  font-size: 2.2rem;
+
+  /* Padding and margins */
+  padding: 1em;
+  margin-top: 3.3rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Border styles */
+  /* border: 3px solid black; */
+  /* Background styles */
+  background-color: none;
+  color: #fff;
+}
+/* #footer a:link{ color:#134896; }
+#footer a:visited{ color:#330033; }
+#footer a:hover{ color:#942A5F; }
+#footer a:active{ color:#6FB25C} */
+
+  /* a:visited { text-decoration: none; color:white; }
+} */
+
+.about  {
+  background-color: tan;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+.about h2 {
+  text-align: center;
+}
+.about p, h3{
+  padding: 2rem;
+  line-height: 125%;
+}
+.about-contents {
+  margin: 4rem auto;
+}
+
+.gallery {
+  background-color: #E8E4DB;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-contents {
+  /* Flexbox stuff */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.picture-box img{
+  /* max-width: 40vw;
+  max-height: 40vw; */
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  padding: 1.6rem;
 }
 .footer {
-  grid-area: footer;
-  justify-self: center;
+  background-color: var(--chestnut);
+  text-align: center;
+  min-height: 30rem;
 }
+.footer h2{
+  color: white;
+}
+.footer p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 135%;
+  padding: 1rem;
+}
+.footer a { text-decoration: none; color: var(--accentgreen) } /* Globally */
 
-.hero {
-  grid-area: hero;
-  justify-self: center;
-  align-self: center;
-  padding: 2.5rem;
-  /* margin-top: 5rem; */
-}
+/* Each state */
 
-.logoBig img{
-  min-width: 30rem;
-  /* width: 75%; */
-  max-width: 50rem;
-}
-.logoSmall {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:auto;
+.footer a:visited { text-decoration: none; color:var(--accentgreen); }
+.footer a:hover { text-decoration: none; color:orange; }
+.footer a:focus { text-decoration: none; color:var(--accentgreen); }
+.footer a:hover, a:active {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+ }
 
-}
-.logoSmall img{
-  align-self: center;
-  min-width: 13.5rem;
-  width: 75%;
-  max-width: 25rem;
-  border-bottom: 2px solid var(--cream);
-}
-@media (max-width: 44rem) {
-  /* controls small / mobile view */
+ .contact-contents {
+   margin: 4rem auto;
+ }
 
-  .announceBar p{
-    font-size: 2.4rem;
-  }
-  .hero h3 {
-    margin-top: 5px;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 300;
-  }
-  .logoBig {
-    display: none;
-  }
-}
-
-@media (min-width: 44rem) {
-  /* controls large / desktop view */
-
-  .announceBar p{
-    font-size: 2.8rem;
-  }
-  .footer p{
-    font-size: 2rem;
-  }
-  .hero h3 {
-    text-align: right;
-    font-size: 3rem;
-    font-weight: 300;
-    margin-top: -5rem;
-    margin-right: -6rem;
-  }
-  .logoSmall {
-    display: none;
-  }
-}
-.navbar {
-  grid-area: navbar;
-  align-self: center;
-}
-.navbar ul {
-  display: flex;
-  flex-direction: row-reverse;
-  list-style: none;
-}
 .socialmedia {
-  padding: 0;
-  margin: 1rem auto;
+  margin: 1rem;
+  margin-bottom: 3rem;
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 3.2rem;
 }
+.socialmedia li {
+  padding: 0 1.6rem;
+}
+
+
+@media (max-width: 44rem) { /*for mobile view*/
+.hero-contents img {
+  /* Set rules to fill background */
+    max-height: 200px;
+    min-height: 100px;
+    max-width: 80%;
+    min-width: 50%;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+  }
+
+  .about-contents {
+
+  }
+}
+@media (min-width: 44rem) { /*for desktop view*/
+.hero-contents img
+  {
+  /* Set rules to fill background */
+    max-height: 30rem;
+    min-height: 10rem;
+    max-width: 50%;
+    min-width: 30%;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+  }
+  .about-contents {
+    max-width: 70rem;
+
+  }
