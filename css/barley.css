@@ -37,7 +37,7 @@ section {
 }
 h1 {
   padding: 1.2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -55,6 +55,7 @@ h3 {
 
 p {
   font-size: 1.8rem;
+  letter-spacing: normal;
   /* padding: 1.6rem; */
 }
 /* div styling */
@@ -76,7 +77,7 @@ p {
     background-image: linear-gradient(
         rgba(48, 36, 63, 0.55),
         rgba(48, 36, 63, 0.55)
-      ),url(../images/barley-fresh-pic.jpg);
+      ),url(../images/barley-pic-nolemon.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -92,7 +93,8 @@ p {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  margin: 2rem;
+  margin: 1.8rem;
+  letter-spacing: .1rem;
 }
 .hero h1 img {
   object-fit: contain;
@@ -100,16 +102,18 @@ p {
 .hero h2 {
   color: white;
   font-weight: normal;
+  letter-spacing: normal;
 }
 
 .hero .btn {
     /* Positioning and sizing */
     display: block;
-    width: 200px;
+    width: 75%;
+    max-width: 35rem;
 
     /* Padding and margins */
-    padding: 1em;
-    margin-top: 4rem;
+    padding: 2rem;
+    margin-top: 3.3rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -131,7 +135,8 @@ p {
 .hero .btn2 {
   /* Positioning and sizing */
   display: block;
-  width: auto;
+  width: 75%;
+  max-width: 35rem;
   font-size: 2.2rem;
 
   /* Padding and margins */
@@ -143,16 +148,15 @@ p {
   /* Border styles */
   /* border: 3px solid black; */
   /* Background styles */
-  background-color: none;
+  background-color: #322E2E;
   color: #fff;
 }
-/* #footer a:link{ color:#134896; }
-#footer a:visited{ color:#330033; }
-#footer a:hover{ color:#942A5F; }
-#footer a:active{ color:#6FB25C} */
-
-  /* a:visited { text-decoration: none; color:white; }
-} */
+.hero .btn2:hover{
+  color:var(--accentgreen);
+}
+.hero .btn2:active{
+  background-color: black;
+}
 
 .about  {
   background-color: tan;
