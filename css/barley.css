@@ -85,17 +85,29 @@ p {
 }
 .announceBar {
   /* visibility: hidden; */
-  align-self: center;
- /* background-color: rgba(235, 230, 221, 0.5); */
+  /* align-self: center; */
+  text-align: center;
+/* background-color: rgba(235, 230, 221, 0.5); */
 }
 .announceBar p{
   color: #fff;
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
+  text-transform: none;
   margin: 1.8rem;
-  letter-spacing: .1rem;
+  letter-spacing: .2rem;
+  line-height: 2.5rem;
+  font-weight: 300;
 }
+.announceBar a {color:white;}
+.announceBar a:visited { text-decoration: none; color:white; }
+.announceBar a:hover { text-decoration: none; color:var(--accentgreen); }
+.announceBar a:focus { text-decoration: none; color:var(--accentgreen); }
+.announceBar a:hover, a:active {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+ }
 .hero h1 img {
   object-fit: contain;
 }
