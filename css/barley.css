@@ -85,12 +85,12 @@ p {
     background-repeat: no-repeat;
 }
 .announceBar {
-  /* visibility: hidden; */
+  visibility: hidden;
   /* align-self: center; */
   text-align: center;
 /* background-color: rgba(235, 230, 221, 0.5); */
 }
-.announceBar p{
+/* .announceBar p{
   color: #fff;
   display: flex;
   justify-content: center;
@@ -108,7 +108,7 @@ p {
   text-decoration: none;
   color: white;
   font-weight: bold;
- }
+ } */
 .hero h1 img {
   object-fit: contain;
 }
